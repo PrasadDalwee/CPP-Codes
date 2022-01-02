@@ -1,3 +1,7 @@
+
+//Build Tree from inorder and preorder sequence
+
+
 #include<iostream>
 using namespace std;
 
@@ -65,9 +69,9 @@ void inorder(Tree* node)        //left->root->right
 int main()
 {
     int inorderarr[]={4,5,2,1,3};
-    int postorderarr[]={1,2,4,5,3};
+    int preorderarr[]={1,2,4,5,3};
     int i=sizeof(inorderarr)/sizeof(inorderarr[0]);
-    Tree* node=build1(inorderarr,postorderarr,0,i);
+    Tree* node=build1(inorderarr,preorderarr,0,i-1);
 
     inorder(node);
 

@@ -36,9 +36,9 @@ void preorder(Tree* node)       //root->left->right
 void postorder(Tree* node)      //left->right->node
 {
     if(node->left!=NULL)
-        preorder(node->left);
+        postorder(node->left);
     if(node->right!=NULL)
-        preorder(node->right);
+        postorder(node->right);
     cout<<node->data<<" ";
 }
 

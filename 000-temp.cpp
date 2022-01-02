@@ -18,5 +18,6 @@ int main()
     //  4. dynamic array of size n: int *arr=new int(n) |or| int *arr; arr=new int(n); creates arr[n]
     //  5. use delete keyword to delete a pointer of some type defined(new LL()) from memory
     
-   
+   int a=3;
+   cout<<(a<<2)<<(a<<=2);
 }
