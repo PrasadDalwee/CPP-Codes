@@ -31,7 +31,7 @@ int solve_diameter(Tree* root, int& res)
     int l=solve_diameter(root->left,res);
     int r=solve_diameter(root->right,res);
 
-    int temp=max(l,r)+1;    // temp provides the subtree height 
+    int temp=max(l,r)+1;    // temp provides the maximum subtree height 
     res=max(res,l+r+1);    //res holds the max value achieved 
 
     return temp;
