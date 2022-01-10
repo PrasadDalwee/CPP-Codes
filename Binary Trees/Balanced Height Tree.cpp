@@ -1,6 +1,4 @@
 #include<iostream>
-#include<climits>
-#include<stdlib.h>
 using namespace std;
 
 class Tree
@@ -22,7 +20,7 @@ int balanced_height_tree(Tree* node, int &bal)   // abs(L subtree - R subtree)<=
         return 0;
     int l=balanced_height_tree(node->left,bal);
     int r=balanced_height_tree(node->right,bal);
-    if(abs(l-r)>1) 
+    if(std::abs(l-r)>1) //simple abs() works just fine but you get a warning that its ambigous 
         bal=0; 
 
     return max(l,r)+1;
