@@ -17,6 +17,7 @@ int main()
     //  3. arr[n], arr is pointer to first element, *ptr prints value arr+1 will point to second element
     //  4. dynamic array of size n: int *arr=new int(n) |or| int *arr; arr=new int(n); creates arr[n]
     //  5. use delete keyword to delete a pointer of some type defined(new LL()) from memory
+    //  6. accessing right or left of NULL pointer stops program in Trees
     
    int a=3;
    cout<<(a<<2)<<(a<<=2);
